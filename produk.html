@@ -106,14 +106,21 @@
               printer Anda, kami bantu carikan yang cocok.
             </p>
           </div>
-          <div class="catalog-tabs">
-            <a href="#katalog" class="catalog-tab active">Semua Produk</a
-            ><a href="#katalog" class="catalog-tab">Cartridge</a
-            ><a href="#katalog" class="catalog-tab">Toner</a
-            ><a href="#katalog" class="catalog-tab">Tinta Printer</a>
+          <div class="catalog-toolbar">
+            <div class="catalog-tabs" role="group" aria-label="Filter kategori produk">
+              <button type="button" class="catalog-tab active" data-filter="semua">Semua Produk</button>
+              <button type="button" class="catalog-tab" data-filter="cartridge">Cartridge</button>
+              <button type="button" class="catalog-tab" data-filter="toner">Toner</button>
+              <button type="button" class="catalog-tab" data-filter="tinta">Tinta Printer</button>
+              <button type="button" class="catalog-tab" data-filter="lainnya">Lainnya</button>
+            </div>
+            <label class="catalog-search">
+              <span>Cari produk</span>
+              <input type="search" id="product-search" placeholder="Cari nama atau kategori..." autocomplete="off">
+            </label>
           </div>
           <div class="catalog-grid">
-            <article class="catalog-card">
+            <article class="catalog-card" data-category="cartridge">
               <div class="catalog-card-image">
                 <img
                   src="foto_produk/WhatsApp%20Image%202026-08-31%20at%2017.33.33.jpeg"
@@ -134,7 +141,7 @@
                 </div>
               </div>
             </article>
-            <article class="catalog-card">
+            <article class="catalog-card" data-category="cartridge">
               <div class="catalog-card-image">
                 <img
                   src="foto_produk/WhatsApp%20Image%202026-08-31%20at%2017.33.34.jpeg"
@@ -155,7 +162,7 @@
                 </div>
               </div>
             </article>
-            <article class="catalog-card featured-card">
+            <article class="catalog-card featured-card" data-category="tinta">
               <div class="catalog-card-image">
                 <span class="catalog-ribbon">Pilihan populer</span
                 ><img
@@ -177,7 +184,7 @@
                 </div>
               </div>
             </article>
-            <article class="catalog-card">
+            <article class="catalog-card" data-category="toner">
               <div class="catalog-card-image">
                 <img
                   src="foto_produk/WhatsApp%20Image%202026-08-31%20at%2017.33.37.jpeg"
@@ -198,7 +205,7 @@
                 </div>
               </div>
             </article>
-            <article class="catalog-card">
+            <article class="catalog-card" data-category="cartridge">
               <div class="catalog-card-image">
                 <img
                   src="foto_produk/WhatsApp%20Image%202026-08-31%20at%2017.46.45.jpeg"
@@ -219,7 +226,7 @@
                 </div>
               </div>
             </article>
-            <article class="catalog-card">
+            <article class="catalog-card" data-category="lainnya">
               <div class="catalog-card-image">
                 <img
                   src="foto_produk/WhatsApp%20Image%202026-08-31%20at%2017.46.48.jpeg"
@@ -239,6 +246,74 @@
                   >
                 </div>
               </div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.33.36 (1).jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.33.35.jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.33.36 (2).jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.46.45 (1).jpeg" alt="Cartridge printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.46.46 (1).jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.46.46.jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.46.48 (1).jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.46.48 (2).jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.46.49.jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.46.50 (1).jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.46.50 (2).jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.46.50.jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.46.51 (1).jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.46.51 (2).jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.46.51.jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.46.52 (1).jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
+            </article>
+            <article class="catalog-card" data-category="lainnya">
+              <div class="catalog-card-image"><img src="foto_produk/WhatsApp Image 2026-08-31 at 17.46.52.jpeg" alt="Produk printer JUNA"></div>
+              <div class="catalog-card-body"><span class="catalog-type">LAINNYA</span><h3>Produk Printer JUNA</h3><p>Pilihan produk printer untuk kebutuhan cetak Anda.</p><div class="catalog-meta"><span>Info tersedia</span><a class="product-wa" href="#">Tanya harga &#8594;</a></div></div>
             </article>
           </div>
         </div>
@@ -324,6 +399,7 @@
         </div>
       </div>
     </footer>
+    <script src="produk.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
