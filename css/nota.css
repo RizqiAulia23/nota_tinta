@@ -72,7 +72,11 @@ body {
 .logo span {
   color: var(--orange);
 }
-
+.logo-img {
+    height: 45px;
+    width: auto;
+    display: block;
+}
 .nav-links {
   display: flex;
   gap: 1.5rem;
